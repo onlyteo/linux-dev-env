@@ -1,6 +1,7 @@
 [user]
     name = Teo
-    email = onlyteo@live.com
+    email = dev@onlyteo.com
+    signingkey = ~/.ssh/id_ed25519
 [alias]
     a = add
     aa = add --all
@@ -23,6 +24,7 @@
     unstage = reset --
     purge = !git reset -- && git checkout -- .
 [core]
+    editor = vim
     autocrlf = input
     longpaths = true
     excludesfile = ~/.gitignore_global
@@ -33,3 +35,7 @@
     prune = true
 [init]
     defaultBranch = main
+[gpg]
+    format = ssh
+[commit]
+    gpgsign = true
